@@ -1,0 +1,22 @@
+﻿<Window x:Class="KMToMiles.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KMToMiles"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFA001FF"/>
+                <GradientStop Color="#FF7F289A" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBlock x:Name="Title" HorizontalAlignment="Center" Height="52" Margin="0,35,0,0" TextWrapping="Wrap" Text="KM To Miles" VerticalAlignment="Top" Width="268" FontWeight="Bold" FontSize="36" TextAlignment="Center"/>
+        <TextBox x:Name="KmToMilesLabel" HorizontalAlignment="Center" Height="29" Margin="0,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="660" FontWeight="Bold" FontSize="16"/>
+        <Button x:Name="ConvertButton" Content="Convert" Height="32" Margin="70,172,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="96" MouseEnter="ConvertButton_MouseEnter" MouseLeave="ConvertButton_MouseLeave" Click="ConvertButton_Click"/>
+        <TextBlock x:Name="ResultButton" HorizontalAlignment="Left" Height="32" Margin="208,172,0,0" TextWrapping="Wrap" Text="Result:" VerticalAlignment="Top" Width="127" FontWeight="Bold" FontSize="16"/>
+
+    </Grid>
+</Window>
