@@ -23,6 +23,7 @@ namespace KMToMiles
         private void ConvertButton_MouseEnter(object sender, MouseEventArgs e)
         {
             ConvertButton.Content = "Mouse Entered";
+            ConvertButton.Content = "Mouse EEEEEEEEEEntered";
         }
 
         private void ConvertButton_MouseLeave(object sender, MouseEventArgs e)
